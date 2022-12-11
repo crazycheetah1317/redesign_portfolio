@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="redesign-portfolio.css" /> 
+  </head>
+
+  <body>
+      <div class="top"> 
+          <h1>Responsive Redesign</h1>
+      </div>
+
+      <div>
+          <p>In this assignment, students were tasked with picking one page of a website to analyze based
+              on usability and accessibility issues. After identifying an applicable webpage and brainstorming 
+              improvements that would address the usability and accessibility issues, students were then
+              asked to redesign the page by making low-fidelity wireframes and a high-fidelity prototype to display these changes,
+              accompanied by a style guide. Using these designs, students then had to recreate the webpage,
+              modeled as close as possible to the final prototype. 
+          </p>
+      </div>
+      
+      <div>
+        <h1>Part 1: Identifying Usability Problems</h1>
+        <p>The website I chose to redesign was Nitro Bar, a cafe with two locations in Newport and one in Providence.
+            Click <a href="https://www.thenitrocart.com/home">HERE</a> to see the original page. Upon first glance, the website
+            doesn't seem to have too many glaring issues. The website is functional, however, as I explored more, I found the
+            navigation and hiearchial structure of the website to be very disorganized. Thus, those are the areas I focused on
+            in my redesign process.
+        </p>
+        
+        <div class="ss-flex-grid">
+            <div class="ss-web">
+                <img src="nb-initial.png">
+                <p>Initial page after entering the website</p>
+            </div>
+            <div class="ss-web">
+                <img src="nb-shop.png">
+                <p>Interface after clicking "Merch"</p>
+            </div>
+            <div class="ss-web">
+                <img src="nb-home1.png">
+                <p>"Home" page (part 1)</p>
+            </div>
+            <div class="ss-web">
+                <img src="nb-home2.png">
+                <p>"Home" page (part 2)</p>
+            </div>
+            <div class="ss-web">
+                <img src="nb-home3.png">
+                <p>"Home" page (part 3)</p>
+            </div>
+            <div class="ss-web">
+                <img src="nb-home4.png">
+                <p>"Home" page (part 4)</p>
+            </div>
+        </div>
+
+        <div class="parts-flex">
+            <div>
+                <div>
+                    <h2>Learnability</h2>
+                </div>
+                <div>
+                    <h3>Is it easy to learn for new users?</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>When users first click on the link to enter the website, there’s only two buttons that users can select so 
+                            it’s unclear whether that screen is the homepage and/or if it leads to other pages (menu, contact us, about, etc).</li>
+                        <li>Once the user plays around with the two buttons, they will see that selecting “Merch” will bring them to the 
+                            main landing page (second screenshot above). This is misleading because “Merch” doesn’t exclusively lead users to the 
+                            shopping page; it opens a new tab with a different interface, almost like a portal into another dimension of the website.</li>
+                        <li>When users click on the icon on the top left of the navigation bar, it brings them back to the initial interface (in the screenshot). 
+                            This causes a lot of confusion over what the main landing page is and what the purpose of the initial interface is if it doesn’t 
+                            serve an important role.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>Memorability</h2>
+                </div>
+                <div>
+                    <h3>Is it easy to recall what to do for casual users?</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>On the initial interface, the label of the button being “Merch” can still be misleading.</li>
+                        <li>On the supposed "Home" page, there might be confusion over what links go to what pages.</li>
+                        <li>Once users know that they are supposed to click on “Merch” to access the rest of the main landing page and navigation bar, 
+                            they shouldn’t have an issue remembering what to do for the future, but it would still be more convenient if the website link 
+                            brought them directly to the homepage.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>Efficiency</h2>
+                </div>
+                <div>
+                    <h3>Can typical tasks be done quickly for frequent users?</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>The navigation bar of the main landing is still disorganized: “Merch” brings the user to the shopping page, which is the second 
+                            tab in the navigation bar (“Order Online” is the first tab) whereas the “Home” tab is the fourth element of the navigation bar when 
+                            typically the homepage should be the first screen of a website.</li>
+                        <li>The buttons and layout on the "Home" page are disorganized too. It's hard to see the buttons that are placed on top of the images.
+                            There's also no structure to the way the buttons and pictures are displayed.</li>
+                        <li>One major aspect that I think users would want to see on the website is the cafe’s menu. In the current design there’s no link or 
+                            picture to a menu.</li>
+                        <li>Some of the other links aren't necessarily essential.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h2>Accessibility</h2>
+                </div>
+                <div>
+                    <h3>Do you agree with the problems detected?</h3>
+                </div>
+                <div>
+                    <ul>
+                        <li>The detected accessibility problems indicate that the social media buttons at the bottom of the page and there are some suspicious 
+                            alternative texts. It shows alerts for 6 suspicious alternative texts, 2 possible headings, and 6 Noscript elements as well as 5 errors:
+                            2 empty buttons and 3 empty links. I agree with these problems because as I was exploring the page myself, I found that a few of the links
+                            in the navigation bar did not work, and some linked to the same page. There are, however, 9 ARIA labels overall, which I think is a reasonable 
+                            amount, given how concise the webpage is.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div>
+        <div class="parts-flex">
+            <h1>Part 2: Visual Redesign</h1>
+
+            <div>
+                <div>
+                    <h2>Low-Fidelity Wireframes</h2>
+                    <div style="width: 75%; margin: 0 auto;">
+                        <p>I created wireframes using Balsamiq for three different screen sizes: desktop, tablet, and mobile. The designs for each screen size is slightly 
+                            so that the entire webpage can be responsive. 
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Desktop</h3>
+                        <img src="desktop.png">
+                    </div>
+
+                    <div>
+                        <h3>Tablet</h3>
+                        <img src="tablet.png">
+                    </div>
+
+                    <div>
+                        <h3>Mobile</h3>
+                        <img src="mobile.png">
+                    </div>  
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Visual Design Style Guide</h3>
+                    <img src="style-guide.png">
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Hi-Fidelity Prototype</h3>
+                    <div style="width: 75%; margin: 0 auto;">
+                        <p>Using Figma, I then created high-fidelity prototypes for the same three screen sizes: desktop, tablet, and mobile.
+                            I used my Balsamiq wireframes to outline the design of each of my prototypes and followed the visual style guide to make
+                            the whole UI come together. These prototypes are what most closely reflect my final product as I used these prototypes
+                            to pay attention to how I wanted the structure of my website to look. 
+                        </p>
+                    </div>
+                    <div>
+                        <img src="figma-desktop.png">
+                    </div>
+
+                    <div>
+                        <img src="figma-tab-mob.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+      <div>
+        <div class="parts-flex">
+            <h1>Part 3: Conclusion and Takeaways</h1>
+
+            <div>
+                <div style="width: 75%; margin: 0 auto;">
+                    <h3>
+                        Click <a href="https://crazycheetah1317.github.io/responsive-redesign/redesign.html">HERE</a> to see my redesigned page!
+                    </h3>
+                    <p>My final redesigned website implements many improvements from the original design, including: </p>
+                    <ul style="padding-top: 0.75rem; padding-bottom: 0.75rem;">
+                        <li>A more organized navigation bar</li>
+                        <li>One main landing page</li>
+                        <li>A cohesive layout of the landing page containing the most important and eye-catching information</li>
+                        <li>Resizing to improve hiearchy</li>
+                        <li>Overall a simplistic but more artistic design</li>
+                    </ul>
+                    <p>This was one of the very first website I coded from scratch. Because I had the original website to base my own ideas off of, I learned
+                        the fundamentals of what it means for a webpage to have a strong hiearchy, consistent styling, and optimal navigation instructions. I enjoyed
+                        working through the entire process of creating this website, from the nascent stages of brainstorming strategies to improve the original website 
+                        to outlining the strucutre to visualizing the entire interface, I loved the creative trial and error aspect of this project. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+
+</html>
